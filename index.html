@@ -15,40 +15,37 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="myMenu">
-    <ul class="navbar-nav mr-auto">
-        <li nav="nav-item"><a href="" class="nav-link">Home</a></li>
-        <li nav="nav-item"><a href="" class="nav-link">About me</a></li>
-        <li nav="nav-item"><a href="" class="nav-link">Portfolio</a></li>
-        <li nav="nav-item"><a href="" class="nav-link">Gallery</a></li>
-        <li nav="nav-item dropdown"><a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
-            <ul class="dropdown-menu bg-dark">
-                <li nav="nav-item"><a href="" class="nav-link">Service1</a></li>
-                <li nav="nav-item"><a href="" class="nav-link">Service2</a></li>
-                <li nav="nav-item"><a href="" class="nav-link">Service3</a></li>
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a href="" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href=""class="nav-link">About</a></li>
+            <li class="nav-item dropdown"><a href=""class="nav-link dropdown-toggle" data-toggle="dropdown">Service</a>
+                <ul class="dropdown-menu bg-dark">
+                    <li class="nav-item"> <a href="" class="nav-link">Service 1</a> </li>
+                    <li class="nav-item"> <a href="" class="nav-link">Service 2</a> </li>
+                    <li class="nav-item"> <a href="" class="nav-link">Service 3</a> </li>
+                </ul>
+            </li>
+
             </ul>
-        </li>
-        <li nav="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+            <!--<form class="form-inline">-->
+                <!--<input type="search" name="search" class="form-control"/>-->
+                <!--<button type="submit" class="btn btn-success ml-2">Search</button>-->
+            <!--</form>-->
+
+    <ul class="navbar-nav">
+        <li class="navbar-nav"><a href="" class="nav-link" data-toggle="modal" data-target="#my1Modal">Log in</a></li>
+        <li class="navbar-nav"><a href="" class="nav-link" data-toggle="modal" data-target="#myModal">Sign up</a></li>
     </ul>
-
-            <form class="form-inline">
-                <input type="search" name="search" class="form-control"/>
-                <button type="submit" class="btn btn-success ml-2">Search</button>
-            </form>
-
-    <!--<ul class="navbar-nav">-->
-        <!--<li class="navbar-nav"><a href="" class="nav-link">Log in</a></li>-->
-        <!--<li class="navbar-nav"><a href="" class="nav-link">Sign up</a></li>-->
-    <!--</ul>-->
         </div>
     </div>
 </nav>
 
 <hr/>
 
-<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Click Me</button>
 
 <div class="modal fade" id="myModal">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
             <div class="modal-header">
@@ -58,16 +55,181 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h3>Some content about modal content</h3>
-                <p>Some paragraph content.Some paragraph content.Some paragraph content.</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <form action="demo.html" method="post">
+                                <div class="form-group">
+                                    <lavel for="firstName">First Name</lavel>
+                                    <input type="text" name="first_name" id="firstName" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <lavel for="firstName">Last Name</lavel>
+                                    <input type="text" name="last_name" id="firstName" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <lavel>Email Address</lavel>
+                                    <input type="email" name="email_address" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <lavel>Password</lavel>
+                                    <input type="password" name="password" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <lavel>Phone Number</lavel>
+                                    <input type="number" name="phone_number" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <lavel>Date of biryth</lavel>
+                                    <input type="date" name="date_of_birth" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <lavel><input type="radio" name="gender" value="male">Male</lavel>
+                                    <lavel><input type="radio" name="gender" value="female">Female</lavel>
+                                </div>
+
+                                <div class="form-group">
+                                    <lavel>Address</lavel>
+                                    <textarea name="address" class="form-control"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <lavel>District Name</lavel>
+                                    <select name="district_name" class="form-control">
+                                        <option>---Select Your District Name---</option>
+                                        <option value="Dhaka">Dhaka</option>
+                                        <option value="Noakhali">Noakhali</option>
+                                        <option value="Comilla">Comilla</option>
+                                        <option value="Narsingdi">Narsingdi</option>
+                                        <option value="Kishoreganj">Kishoreganj</option>
+                                        <option value="Khulna">Khulna</option>
+                                        <option value="Bogura">Bogura</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <lavel>Image</lavel>
+                                    <input type="file" name="image" accept="image/*" multiple>
+                                </div>
+
+                                <div class="form-check">
+                                    <lavel>
+                                        <input type="checkbox" name="agree" value="agree" class="form-check-input"/>I agree with all terms & conditions.
+                                    </lavel>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="submit" name="btn" value="submit" class="btn btn-success btn-block"/>
+                                </div>
+                            </form>
+
+                        </div>
             </div>
             <div class="modal-footer">
                 <h3>Some content</h3>
             </div>
 
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+        <div class="modal fade" id="my1Modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h3>Some content about modal header</h3>
+                        <button class="close" data-dismiss="modal">
+                            &cross;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <form action="demo.html" method="post">
+
+                                        <div class="form-group">
+                                            <lavel>Email Address</lavel>
+                                            <input type="email" name="email_address" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <lavel>Password</lavel>
+                                            <input type="password" name="password" class="form-control">
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <h3>Some content</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<hr/>
+
+<!--this is sliding-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+
+            <div id="mySlider" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/img1.jpg" alt=""/>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/img2.jpg" alt=""/>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/img3.JPG" alt=""/>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/img5.JPG" alt=""/>
+                    </div>
+
+                </div>
+                <a href="#mySlider" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#mySlider" class="carousel-control-next" data-slide="prev">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 
 
 <script src="js/jquery-3.2.1.js"></script>
